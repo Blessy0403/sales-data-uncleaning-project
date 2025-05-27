@@ -1,75 +1,78 @@
-# sales-data-uncleaning-project
-Simulated uncleaning of a cleaned sales dataset based on data quality dimensions such as conformity, completeness, validity, and uniqueness — for Data Management I project.
+# 📊 Data Management I – Goal A & Goal B
 
-# 🧹 Sales Data Uncleaning Project – Data Management I
-
-### 🎓 Course: Data Management I  
-👩‍💻 Student: Blessy Evangeline Aaron  
-📄 Dataset: Sales Data Analysis (Kaggle-based)
+### 👩‍💻 Student: Blessy Evangeline Aaron  
+🎓 SRH University Heidelberg  
+📁 Course: Data Management I (SS2024)
 
 ---
 
 ## 📌 Project Overview
 
-This project explores the reverse process of data cleaning — simulating *unclean* data — using a previously cleaned sales dataset. The aim is to understand and demonstrate how various **data quality dimensions** (DQDs) can be intentionally distorted for academic and testing purposes.
+This project focuses on **data quality assessment** and **intentional data uncleaning** for two distinct datasets:
+
+- **Goal A:** Food Waste and Emissions Data  
+- **Goal B:** Sales Data Analysis
+
+Both goals simulate common data quality issues — such as missing values, duplicates, invalid entries, and formatting inconsistencies — for educational purposes.
 
 ---
 
-## 🧪 Dataset Details
+## 🎯 Learning Objectives
 
-The original dataset includes:
-- Order ID  
-- Product  
-- Quantity Ordered  
-- Price Each  
-- Order Date  
-- Purchase Address  
-- Month, Sales, City, Hour
+- Understand and apply Data Quality Dimensions (DQDs)
+- Demonstrate conformity, completeness, accuracy, validity, and uniqueness issues
+- Practice uncleaning structured datasets for testing/teaching use cases
+- Prepare data for ETL, SQL, and Tableau workflows
 
 ---
 
-## 🧬 Data Quality Dimensions Affected
+## 🧩 Included Files
 
-| Dimension    | Change Introduced | Impact |
-|--------------|-------------------|--------|
-| **Conformity** | Changed "City" values to lowercase | Affects case sensitivity |
-| **Validity**   | Replaced ~30% of "City" values with "error" | Introduces invalid entries |
-| **Completeness** | Made ~40% of "Sales" values empty | Reduces completeness |
-| **Uniqueness**  | Duplicated the "Product" column | Introduces redundancy |
-| **Accuracy**    | Injected "RandomText" into 10% of rows | Introduces noise |
-| **Consistency** | Mixed data types in columns | Disrupts uniformity |
+### 📁 Goal A – Food Emissions & Waste
+- `emmission_unclean.csv` – Dataset with emissions errors
+- `Food_Emmisions.tfl` – Tableau flow file
+- `Food_Emmisions.sql` – SQL script for database import
+- `Food_Waste_Emissions.csv` – Clean food waste + emissions dataset
+- `Foodwaste_unclean.csv` – Intentionally uncleaned data for Goal A
+- `FoodWasteEmissionppt.pdf` – Summary presentation
 
----
-
-## 🧾 Summary of Changes
-
-- Introduced duplicates  
-- Replaced values with `NULL`  
-- Added random characters  
-- Created case inconsistencies  
-- Mixed data types across columns
+### 📁 Goal B – Sales Data Simulation
+- `Sales Data.csv` – Original clean dataset
+- `Unclean_data.csv` – Intentionally corrupted data
+- `Uncleaned_Data.tfl` – Tableau uncleaning workflow
+- `Data Management/Goal B` – Goal B explanation document
 
 ---
 
-## 📁 Files Included
+## 🧪 Data Quality Modifications
 
-- `Uncleaned_Data.tfl` – Raw modified dataset
-- `Goal B.docx` – Documentation explaining uncleaning steps
+| Dimension    | Example Issue (Goal B) |
+|--------------|------------------------|
+| **Conformity** | Mixed casing in City column |
+| **Completeness** | ~40% of Sales column is empty |
+| **Uniqueness** | Duplicate Product columns |
+| **Validity** | ~30% of City replaced with "error" |
+| **Accuracy** | Random text injected |
+| **Consistency** | Mixed data types in columns |
+
+Similar modifications are applied in **Goal A** datasets to simulate inconsistencies in food waste/emission records.
 
 ---
 
-## 🎯 Learning Objective
+## 📂 Folder Summary
 
-This exercise helps reinforce:
-- Understanding of how data quality issues arise
-- Practical knowledge of DQDs: completeness, conformity, uniqueness, accuracy
-- The importance of clean data in analytics pipelines
+- `Goal A`: Focused on Food Emission data quality
+- `Goal B`: Focused on Sales Data from Kaggle
+- `*.csv`: Raw, clean, and intentionally uncleaned datasets
+- `*.sql`: Scripts for relational schema loading
+- `*.tfl`: Tableau flows showing uncleaning logic
+- `*.pdf / .docx`: Documentation and presentation
 
 ---
 
-## ✅ Status
+## 🧠 Summary
 
-> 📂 All modifications are intentional and documented for academic demonstration.
+This project illustrates how clean datasets can be intentionally uncleaned to simulate real-world data problems and train data practitioners in identifying and resolving data quality issues across multiple tools and formats.
 
 ---
 
